@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy Monitor Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard">
+
+    <!-- Top summary section -->
+    <header class="top-section">
+      <div class="summary">
+        <div class="summary-item">
+          <span>Estimated Cost</span>
+          <h2 id="estimatedCost">₱1,250.00</h2>
+          <small>This month</small>
+        </div>
+
+        <div class="summary-item wattage">
+          <span>Wattage</span>
+          <h2 id="totalWattage">450 W</h2>
+          <small>Current power</small>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main menu -->
+    <main class="main-content">
+
+      <h3 class="section-title">Main Menu</h3>
+
+      <div class="menu-grid">
+
+        <button class="menu-card" data-page="history">
+          <span class="menu-icon">▤</span>
+          <span>History</span>
+        </button>
+
+        <button class="menu-card" data-page="scheduler">
+          <span class="menu-icon">◷</span>
+          <span>Scheduler</span>
+        </button>
+
+        <button class="menu-card" data-page="appliances">
+          <span class="menu-icon">＋</span>
+          <span>Add Appliance</span>
+        </button>
+
+        <button class="menu-card" data-page="list">
+          <span class="menu-icon">☷</span>
+          <span>Appliance List</span>
+        </button>
+
+        <button class="menu-card" data-page="features">
+          <span class="menu-icon">⚡</span>
+          <span>Features</span>
+        </button>
+
+        <button class="menu-card" data-page="notifications">
+          <span class="menu-icon">♧</span>
+          <span>Notifications</span>
+        </button>
+
+      </div>
+
+      <!-- Dynamic page content -->
+      <section class="content-panel">
+        <div id="pageContent"></div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Energy Monitor · Smart Energy Management</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
